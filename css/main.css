@@ -1,0 +1,280 @@
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=cyrillic);
+body {
+
+	font-family: "Exo 2", sans-serif;
+	padding: 0;
+	margin: 0;
+	transform: scale(0.75);
+   transform-origin: 0 0;
+   overflow-x:hidden;
+   height: 1600px;
+
+}
+.container {
+	width: 1600px;
+	margin: 0 auto;
+}
+.header {
+	background: linear-gradient(#151515, #2e2e2f);
+	width: 1700px;
+	  
+}
+
+.logo{
+	position: absolute;
+}
+
+.shapka {
+	color: #fff;
+	font-size: 15px;
+	position: relative;
+	display: inline-block;
+}
+.ph1 {
+	position: absolute;
+
+}
+
+.offer {
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	font-weight: black;
+	padding: 800px 0 850px 0;
+}
+.titlegl{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	left: 300px;
+
+}
+.titleusl{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	left: 600px;
+
+}
+.titlegal{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	left: 583.5px;
+}
+
+.titleobor{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	left: 735px;
+}
+.titlelk{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	left: 1325px;
+}
+
+
+
+h2 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.pl01 {
+  background-image: url("pl01.png");
+  position: absolute;
+  left: 29px;
+  width: 1548px;
+  height: 777px;
+  z-index: 7;
+}
+
+a {
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+.autorize {
+font-family: "Exo 2";
+width: 291px;
+height: 266px;
+background-color: rgba(0,0,0,0.75);
+text-align: center;	
+border-radius: 25px; 
+
+}
+input[type="text"],input[type="password"] {
+	font-family: "Exo 2";
+margin-top: 27px;
+width: 240px;
+height: 50.5px;	
+margin-bottom: 1px;
+font-size: 18px;
+border-radius: 10px; 
+border: none; 
+padding-left: 15px;
+font-weight: light;
+}
+input[type="submit"]{
+	font-family: "Exo 2";
+	font-weight: black;
+	text-align: center;
+
+  border-radius: 14px;
+height: 28px;
+width: 105px;
+background-color: #ffe926;
+margin-top: 25px;
+border: none;
+padding-bottom: 3px;
+
+ 
+}
+.autorize{
+  position: absolute;
+  left: 1303px;
+  top: 102px;
+  width: 291px;
+  height: 266px;
+
+}
+#login{
+	display: block;
+}
+button{
+		font-family: "Exo 2";
+	font-weight: black;
+	text-align: center;
+
+  border-radius: 14px;
+height: 28px;
+width: 105px;
+background-color: #ffe926;
+margin-top: 25px;
+border: none;
+padding-bottom: 3px;
+}
+
+
+
+
+}
+input[type="checkbox"] {
+	border-left: 10px 0 0 0;
+}
+
+#window{
+margin: 150px 0 0 450px;
+width: 586px;
+height: 453px;
+position: absolute;
+background-color: rgba(0,0,0,0.75); 
+text-align: center;
+border-radius: 25px;
+display: none;
+z-index: 150;
+}
+#gray{
+	background-color: rgba(1,1,1,0.75);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	z-index: 100;
+	overflow: auto;
+}
+.close {
+position: absolute;
+right: 10px;
+top: 5px;
+width: 25px;
+height: 15px;
+opacity: 0.3;
+}
+.close:hover {
+opacity: 1;
+}
+.close:before, .close:after {
+position: absolute;
+left: 15px;
+content: ' ';
+height: 33px;
+width: 2px;
+background-color: #fff;
+}
+.close:before {
+transform: rotate(45deg);
+}
+.close:after {
+transform: rotate(-45deg);
+}
+
+h1{
+	color:#fff;
+}
+#resetpass{
+		margin: 150px 0 0 500px;	
+		width: 500px;
+		height: 200px;
+		border-radius: 25px;
+		position: absolute;
+		background-color: rgba(0,0,0,0.75);
+		display: none;
+		z-index: 150; 
+
+}
+#bg1{
+	background-color: rgba(1,1,1,0.75);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	z-index: 100;
+	overflow: auto;
+}
+
+#id1{
+text-decoration: none;	
+}
+.oborudov{
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	font-weight: black;
+	
+
+}
+.sony{
+	height: 448px;
+	width: 750px;
+}
+h3{
+	font-size: 22pt;
+	text-align: justify;
+}
+.txt{
+	position: absolute;
+	top: 300px;
+}
+.pr{
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	font-weight: black;
+}
+.pr1{
+	position: relative;
+	left: 300px;
+}

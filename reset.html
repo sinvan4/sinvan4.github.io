@@ -1,0 +1,42 @@
+<?php
+require_once "libs/functions.php";
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Фотограф Иван Синицин</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<center>
+		<button onclick="show('block')" class="regButton">
+			Регистрация
+		</button>
+	</center>
+	<div onclick="show('none')" id="gray">
+		<!-----Задний прозрачный фон----->
+
+	</div>
+
+		<div id="resetpass">
+			<form method="POST" action="http://localhost/reset.php">
+			<center>
+					<span onclick="show('none')" class="close"></span>
+					<h1>Восстановление пароля</h1>
+					<input type="text" name="email" placeholder="Введите E-mail"required>
+					<input type="submit" name="do_reset" value="Восстановить"  >
+			</center>			
+			</form>
+		</div>
+<script>
+//Функция показа
+	function show(state)
+	{
+	document.getElementById('resetpass').style.display = state;	
+	document.getElementById('gray').style.display = state; 		
+	}	
+</script>
+</body>
+</html>

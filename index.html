@@ -1,0 +1,250 @@
+<?php
+session_start();
+if(!empty($_POST['do_register']))
+{
+	$surname = $_POST['surname'].
+	$name = $_POST['name'].
+	$patronymic = $_POST['patronymic'].
+	$email = $_POST['email'].
+	$login = $_POST['login'].
+	$password = $_POST['password'].
+	$r_password = $_POST['r_password'].
+	$telephone = $_POST['telephone'];
+}
+if(!empty($_POST['do_login'])){
+	$login = $_POST['login'].
+	$password = $_POST['password'];	
+}
+if(!empty($_POST['do_reset'])){
+	$email = $_POST['email'];
+
+}
+if (!empty($_SESSION['login'])){
+	$_SESSION['login'] = "login";
+
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Фотограф Иван Синицин</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	
+	<script>
+		$(function()  {
+			$("#buttonR").button();
+		});
+	</script>
+</head>
+<body>
+	<header class="header">
+
+		<div class="container">
+			<div class="ph1">
+						<img src="img/ph1.jpg" alt="">	
+						</div>
+
+				<div class="shapka">
+						<img src="img/shapka.png" alt="">
+					<h1 class="titlegl" position: absolute>
+					
+						Главная
+						
+					</h1>
+
+					<h1 class="titleusl" position: absolute>
+						<a href="price.html" id="id1">
+						Прайс
+						</a>
+					</h1>
+					
+					
+
+					<h1 class="titleobor" position: absolute>
+						<a href="oborud.html" id="id1">
+						Оборудование 
+						</a>
+						
+					</h1>
+					<h1 class="titlelk" name="lk" position: absolute>
+						<a href="lk.php" id="id1">
+						Личный кабинет
+					</a>
+						
+					</h1>
+
+					
+					<div id="login">
+						<div class="autorize">
+						<form method="POST" action="http://localhost/login.php">
+						<input type="text" name="login" placeholder="Введите логин" required>	
+						<input type="password" name="password" placeholder="Введите пароль" required>
+						<input type="submit" name="do_login" value="Войти"  ><br>
+						<a href="#" onclick="show('block')">Регистрация</a>
+						<br>
+						<a href="#" onclick="bg1('block')">Восстановить пароль</a>
+						</form>
+					</div>
+				    </div>
+
+
+
+
+		<div onclick="show('none')" id="gray">
+		<!-----Задний прозрачный фон----->
+
+		</div>
+
+					<div id="window">
+						<div class="registrac">
+							<form method="POST" action="http://localhost/register.php">
+							<span onclick="show('none')" class="close"></span>
+							<input type="text" name="surname" placeholder="Введите фамилию" required>
+							<input type="text" name="login" placeholder="Введите логин" required>
+							<input type="text" name="name" placeholder="Введите имя" required>
+							<input type="password" name="password" placeholder="Введите пароль" required>
+							<input type="text" name="patronymic" placeholder="Введите отчество" required>			
+							<input type="password" name="r_password" placeholder="Повторите пароль" required>
+							<input type="text" name="email" placeholder="Введите E-mail" required>
+							<input type="text" name="telephone" placeholder="Введите Телефон" required>
+							<br>
+							<input type="checkbox" name="politika" value="a4" required>Я ознакомился с <a href="rules.html" target="_blank">правилами</a>, политикой<Br>
+							<a href="polit.html" target="_blank">конфеденциальности</a> и принимаю их условия.<br>				
+							<input type="submit" name="do_register" value="Регистрация"  >
+							</form>
+						</div>
+					</div>
+<script>
+//Функция показа
+	function show(state)
+	{
+	document.getElementById('window').style.display = state;	
+	document.getElementById('gray').style.display = state; 		
+	}	
+</script>
+
+
+	<div onclick="bg1('none')" id="bg1">
+		
+	</div>
+
+		<div id="resetpass">
+			<form method="POST" action="http://localhost/reset.php">
+			<center>
+					<span onclick="bg1('none')" class="close"></span>
+					<h1>Восстановление пароля</h1>
+					<input type="text" name="email" placeholder="Введите E-mail"required>
+					<input type="submit" name="do_reset" value="Восстановить"  >
+					
+			</center>			
+			</form>
+		</div>
+
+
+
+
+<script>
+//Функция показа
+	function bg1(state)
+	{
+	document.getElementById('resetpass').style.display = state;	
+	document.getElementById('bg1').style.display = state; 		
+	}	
+</script>
+
+
+					<div class="offer">
+						<h1 class="title">
+							Фотоуслуги
+						</h1>
+					<h2 class="titleuslugi1">
+						Детская фотосессия
+					</h2>
+					<img src="img/ph2.jpg" alt="">
+
+					<h2 class="titleuslugi2">
+						Семейный и индивидуальный портрет
+					</h2>
+
+					<img src="img/ph3.jpg" alt="">
+
+					<h2 class="titleuslugi3">
+						Художественная фотосессия
+					</h2>
+
+					<img src="img/ph4.jpg" alt="">
+
+					<h2 class="titleuslugi4">
+						Предметная фотосессия
+					</h2>
+
+					<img src="img/ph5.jpg" alt="">
+
+					<h2 class="titleuslugi5">
+						Обработка фото
+					</h2>
+
+					<img src="img/ph6.jpg" alt="">
+
+					<h2 class="titleuslugi5">
+						Галерея работ
+					</h2>
+					<div class="pl01">
+						<img src="img/pl01.png" alt="">	
+					</div>
+
+					
+
+			</div>
+
+					</div>
+				</div>
+	</div>
+	</header>
+
+
+	<section class="photo">
+		<div class="container">
+			
+		</div>
+	</section>
+
+
+
+	<footer class="footer">
+	<div class="container">
+		
+	</div>	
+	</footer>
+
+
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	var email = $("#email");
+  	 $(document).ready(function() {
+  	 	$('.do_reset').on('clik',function() {
+  	 		if (email.val() !="") {
+  	 		email.css('border', '1px solid green');	
+
+  	 		$.ajax({
+  	 			url: 'index.html',
+  	 			method: 'POST',
+  	 			dataType: 'text',
+  	 			data: {
+  	 				email: email.val()
+  	 			}, succes: function (response){
+  	 				console.log(response)
+  	 			}
+  	 		})	
+  	 		} else
+  	 		email.css('border', '1px solid red');
+  	 	})
+  	 });
+  </script>	
+</body>
+</html>
